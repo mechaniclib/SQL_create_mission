@@ -154,6 +154,15 @@
 
       </details>
 
+      
+      <!-- 출력결과 좌우로 정렬이 일치하지 않는 모습이 보입니다.
+                        원인 : editor상의 space 와 tab 간격이 일정하지 않음
+                        해결 : 각 항목을 같은 line상에 배치
+                        select DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID,
+                        decode(LOCATION_ID, 1400, '인천', 1500, '광주', 1700, '서울', 1800, '울산', 2400, '부산', 2500, '세종', 2700, '제주도') as 지역
+                        으로 수정하면 출력결과의 가독성이 좋을것 같습니다-->
+      
+      
 </div>
 
 <div class='question' id='Q5'>
